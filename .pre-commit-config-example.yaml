@@ -4,9 +4,9 @@ repos:
     hooks:
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
--   repo: https://github.com/doublify/pre-commit-rust
-    rev: v1.0
+    -   id: check-merge-conflict
+-   repo: git@gitlab.com:famedly/company/backend/templates/pre-commit-templates.git
+    rev: main
     hooks:
     -   id: fmt
-    -   id: cargo-check
     -   id: clippy

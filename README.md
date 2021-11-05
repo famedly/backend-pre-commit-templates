@@ -5,4 +5,6 @@ Install pre-commit with `pip install pre-commit`
 
 ## Usage
 
-Add the pre-commit configuration example (`.pre-commit-config-example.yaml`) as `.pre-commit-config.yaml` to your project and run `pre-commit install`. The pre-commit hooks are then run to checkyour commit for validity before.
+Add the pre-commit configuration example (`.pre-commit-config-example.yaml`) as `.pre-commit-config.yaml` to your project.
+Then run `pre-commit autoupdate` to automatically use the newest revision on the main branch (branches in the config are invalid) and run `pre-commit install` to install the pre-commit hooks locally.
+The configured hooks are then run before commits and check your commit for validity.

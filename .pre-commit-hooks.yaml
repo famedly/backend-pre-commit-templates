@@ -1,22 +1,15 @@
 - id: fmt
   name: fmt
   description: Format files with cargo fmt.
-  entry: cargo fmt
+  entry: cargo +nightly fmt
   language: system
   types: [rust]
-  args: ["--"]
-- id: cargo-check
-  name: cargo check
-  description: Check the package for errors.
-  entry: cargo check
-  language: system
-  types: [rust]
-  pass_filenames: false
+  args: ["--", "--check"]
 - id: clippy
-  name: clippy
+  name: cargo clippy
   description: Lint rust sources
   entry: cargo clippy
   language: system
-  args: ["--", "-D", "warnings"]
+  args: ["--all-targets", "--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
