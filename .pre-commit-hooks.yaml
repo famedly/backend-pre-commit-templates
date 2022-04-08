@@ -6,10 +6,10 @@
   types: [rust]
   args: ["--", "--check"]
 - id: clippy
-  name: cargo clippy
+  name: cargo lints clippy
   description: Lint rust sources
-  entry: cargo clippy
+  entry: cargo lints clippy
   language: system
-  args: ["--all-targets", "--", "-D", "warnings"]
+  args: ["--workspace", "--all-targets", "--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
