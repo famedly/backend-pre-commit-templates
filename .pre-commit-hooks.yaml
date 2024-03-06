@@ -6,9 +6,9 @@
   types: [rust]
   args: ["--", "--check"]
 - id: clippy
-  name: cargo lints clippy
+  name: cargo clippy
   description: Lint rust sources
-  entry: cargo lints clippy
+  entry: cargo clippy
   language: system
   args: ["--workspace", "--all-targets", "--", "-D", "warnings"]
   types: [rust]
