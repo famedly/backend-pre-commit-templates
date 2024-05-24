@@ -13,3 +13,8 @@
   args: ["--workspace", "--all-targets", "--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
+- id: cargo_lock
+  name: cargo lockfile
+  description: Ensures the Cargo.lock is up to date
+  entry: cargo check
+  language: system

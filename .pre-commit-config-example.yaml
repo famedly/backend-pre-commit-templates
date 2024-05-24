@@ -10,3 +10,4 @@ repos:
     hooks:
     -   id: fmt
     -   id: clippy
+    -   id: cargo_lock
