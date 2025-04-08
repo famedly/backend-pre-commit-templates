@@ -1,6 +1,10 @@
+# SPDX-FileCopyrightText: 2025 Famedly GmbH (info@famedly.com)
+#
+# SPDX-License-Identifier: CC0-1.0
+
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
     -   id: check-byte-order-marker
     -   id: check-case-conflict
@@ -20,3 +24,7 @@ repos:
     rev: v1.16.3
     hooks:
     -   id: typos
+-   repo: https://github.com/fsfe/reuse-tool
+    rev: v5.0.2
+    hooks:
+    -   id: reuse

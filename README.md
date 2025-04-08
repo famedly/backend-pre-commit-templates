@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2025 Famedly GmbH (info@famedly.com)
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Pre-commit templates
 
 This holds precommit-hook definitions for [pre-commit](https://pre-commit.com/), that we can use in all our repositories.
